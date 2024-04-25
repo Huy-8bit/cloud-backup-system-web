@@ -1,0 +1,89 @@
+#displayCont {
+  flex: 1; /* Take remaining space */
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Align children vertically */
+  position: fixed;
+  top :150px;
+  left: 300px;
+}
+#navbar {
+  /* Your existing navbar styles */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure navbar spans the entire width */
+  z-index: 999; /* Ensure navbar is above other content */
+}
+
+#mainCont {
+  display: flex;
+  position: fixed;
+  margin-top: 115px; /* Ensure space below the fixed navbar */
+}
+#displayInfoNav {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid silver;
+  /* justify-content: center; */
+  padding: 5px 10px;
+}
+
+#displayInfoNav p {
+  font-size: 20px;
+  /* border: 1px solid blue; */
+  width: 90%;
+}
+#sideBar {
+  width: 230px;
+  position: fixed;
+  top: 115px;
+  left: 0;
+}
+#displayInfoNav button {
+  background-color: transparent;
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+#displayInfoNav button:hover {
+  transition: 0.3s;
+  background-color: whitesmoke;
+}
+
+#displayInfoNav button img {
+  height: 20px;
+}
+
+#contentDisplayer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 230px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
+  overflow-y: scroll;
+  flex: 1; /* Take remaining space */
+}
+.displayCard {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  height: 220px;
+  width: 220px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.displayCard img {
+  height: 160px;
+}
